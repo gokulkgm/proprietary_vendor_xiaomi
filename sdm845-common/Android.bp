@@ -105,3 +105,21 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
+
+android_app_import {
+	name: "XiaomiWfdService",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "XiaomiWfdCommon",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
+}

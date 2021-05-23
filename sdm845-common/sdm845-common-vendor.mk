@@ -806,4 +806,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
-    PowerOffAlarm
+    PowerOffAlarm \
+    XiaomiWfdCommon \
+    XiaomiWfdService
